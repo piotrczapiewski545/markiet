@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Markiet</title>
+
+    <div th:replace="fragments/header :: header-css"/>
+
+</head>
+<body>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Markiet - services at your fingertips</h1>
+        <h2>1. <a th:href="@{offers}">Browse offers</a></h2>
+        <h2>2. <a th:href="@{addOffer}">Add new offer</a></h2>
+        <h2>3. <a th:href="@{about}">About Markiet</a></h2>
+        <h2>4. <a th:href="@{login}">Log in</a></h2>
+    </div>
+
+</div>
+<!-- /.container -->
+
+<div th:replace="fragments/footer :: footer"/>
+
+</body>
+</html>
